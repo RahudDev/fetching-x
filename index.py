@@ -3,15 +3,15 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(dotenv_path='.env.backend')
 
 
 app = Flask(__name__)
 
 # Replace the connection string with your MongoDB connection string
-client = MongoClient(os.getenv('DB_POLO'))
-db = client[os.getenv('ROOT_DB')]
-collection = db[os.getenv('ROOT_C')]
+client = MongoClient(os.getenv('DB_POLO'));
+db = client[os.getenv('ROOT_DB')];
+collection = db[os.getenv('ROOT_C')];
 
 def flatten_document(doc, parent_key='', sep='_'):
     flat_doc = {}
