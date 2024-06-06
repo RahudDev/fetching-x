@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "flask_app.py",
+        "src": "index.py",
         "use": "@vercel/python",
         "config": {
           "runtime": "python3.12.3" 
@@ -12,7 +12,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "flask_app.py"
+        "dest": "index.py"
       }
     ]
   }
