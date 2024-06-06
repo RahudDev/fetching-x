@@ -92,6 +92,4 @@ uuid==1.30
 
 Werkzeug==3.0.1
 
-pymongo==3.11.4
-
 python-dotenv==0.19.2
